@@ -87,7 +87,7 @@ public class EmailHandling extends Constant {
             //BodyPart messageBodyPart1_2 = new MimeBodyPart();
 
             // Set the body of email
-            messageBodyPart1.setText(LogFileHandling.ReadFile("EmailLog_dosifyLogFile","C:\\Simply\\QA_Automation\\ddosify_0.7.5_windows_amd64"));
+            messageBodyPart1.setText(LogFileHandling.ReadFile("EmailLog_ddosifyLogFile","C:\\Simply\\QA_Automation\\ddosify_0.7.5_windows_amd64"));
             //messageBodyPart1_2.setText("This is an Run log");
 
             // Create another object to add another content

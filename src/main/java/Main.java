@@ -16,12 +16,12 @@ public class Main {
 
         String JenkinsLogLocation = "C:\\Simply\\QA_Automation\\ddosify_0.7.5_windows_amd64\\ddosifyLogFile.txt";
 
-        String EmailLog_dosifyLogFile = "C:\\Simply\\QA_Automation\\ddosify_0.7.5_windows_amd64\\LogFile\\EmailLog_dosifyLogFile.txt";
+        String EmailLog_dosifyLogFile = "C:\\Simply\\QA_Automation\\ddosify_0.7.5_windows_amd64\\LogFile\\EmailLog_ddosifyLogFile.txt";
 
 
-        //LogFileHandling.DeleteFile("EmailLog_ddosifyLogFile", "C:\\Simply\\QA_Automation\\ddosify_0.7.5_windows_amd64");
+        LogFileHandling.DeleteFile("EmailLog_ddosifyLogFile", "C:\\Simply\\QA_Automation\\ddosify_0.7.5_windows_amd64");
 
-        //LogFileHandling.CreateFile("EmailLog_ddosifyLogFile", "C:\\Simply\\QA_Automation\\ddosify_0.7.5_windows_amd64");
+        LogFileHandling.CreateFile("EmailLog_ddosifyLogFile", "C:\\Simply\\QA_Automation\\ddosify_0.7.5_windows_amd64");
 
 
         String line = null;
