@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ddosifyLogReportEmailSend:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ddosifyLogReportEmailSend_jar</output-path>
+    <root id="archive" name="ddosifyLogReportEmailSend.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="ddosifyLogReportEmailSend" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/src/main/resources/SimplyTestInfrastructure.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/sun/mail/javax.mail/1.6.2/javax.mail-1.6.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/javax/activation/activation/1.1/activation-1.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

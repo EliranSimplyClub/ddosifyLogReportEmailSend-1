@@ -13,10 +13,14 @@ public class Main {
         createDirctory();
 
         String JenkinsLogLocation = "C:\\Simply\\QA_Automation\\ddosify_0.7.5_windows_amd64\\ddosifyLogFile.txt";
+        System.out.println("1");
         String EmailLog_dosifyLogFile = "C:\\Simply\\QA_Automation\\ddosify_0.7.5_windows_amd64\\LogFile\\EmailLog_dosifyLogFile.txt";
 
+        System.out.println("2");
         LogFileHandling.DeleteFile("EmailLog_dosifyLogFile", "C:\\Simply\\QA_Automation\\ddosify_0.7.5_windows_amd64");
+        System.out.println("3");
         LogFileHandling.CreateFile("EmailLog_ddosifyLogFile", "C:\\Simply\\QA_Automation\\ddosify_0.7.5_windows_amd64");
+        System.out.println("4");
 
         String line = null;
 
