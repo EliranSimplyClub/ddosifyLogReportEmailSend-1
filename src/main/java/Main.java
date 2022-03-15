@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args) {
 
 
-        createDirctory();
+        //createDirctory();
 
 
         String JenkinsLogLocation = "C:\\Simply\\QA_Automation\\ddosify_0.7.5_windows_amd64\\ddosifyLogFile.txt";
@@ -29,7 +29,7 @@ public class Main {
         String encoding = "UTF-8";
         File file = new File(JenkinsLogLocation);
 
-        System.out.println("HOME_DIRECTORY: "+InfrastructureMainFunction.GetLocalDir());
+        //System.out.println("HOME_DIRECTORY: "+InfrastructureMainFunction.GetLocalDir());
 
         if (file.exists()) {
             try (BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(file), encoding))) {
