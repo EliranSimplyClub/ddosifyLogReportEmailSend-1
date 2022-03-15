@@ -9,20 +9,20 @@ import java.io.*;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("0");
+
 
         createDirctory();
 
-        System.out.println("0.1");
+
         String JenkinsLogLocation = "C:\\Simply\\QA_Automation\\ddosify_0.7.5_windows_amd64\\ddosifyLogFile.txt";
-        System.out.println("1");
+
         String EmailLog_dosifyLogFile = "C:\\Simply\\QA_Automation\\ddosify_0.7.5_windows_amd64\\LogFile\\EmailLog_dosifyLogFile.txt";
 
-        System.out.println("2");
-        LogFileHandling.DeleteFile("EmailLog_ddosifyLogFile", "C:\\Simply\\QA_Automation\\ddosify_0.7.5_windows_amd64");
-        System.out.println("3");
-        LogFileHandling.CreateFile("EmailLog_ddosifyLogFile", "C:\\Simply\\QA_Automation\\ddosify_0.7.5_windows_amd64");
-        System.out.println("4");
+
+        //LogFileHandling.DeleteFile("EmailLog_ddosifyLogFile", "C:\\Simply\\QA_Automation\\ddosify_0.7.5_windows_amd64");
+
+        //LogFileHandling.CreateFile("EmailLog_ddosifyLogFile", "C:\\Simply\\QA_Automation\\ddosify_0.7.5_windows_amd64");
+
 
         String line = null;
 
@@ -36,7 +36,7 @@ public class Main {
 
                 while ((line = br.readLine()) != null) {
                     //System.out.println(line);
-                    LogFileHandling.WriteToFile("EmailLog_dosifyLogFile", line, "C:\\Simply\\QA_Automation\\ddosify_0.7.5_windows_amd64");
+                    LogFileHandling.WriteToFile("EmailLog_ddosifyLogFile", line, "C:\\Simply\\QA_Automation\\ddosify_0.7.5_windows_amd64");
 
                 }
                 String l = br.lines().toString();
