@@ -9,9 +9,11 @@ import java.io.*;
 public class Main {
 
     public static void main(String[] args) {
+        System.out.println("0");
 
         createDirctory();
 
+        System.out.println("0.1");
         String JenkinsLogLocation = "C:\\Simply\\QA_Automation\\ddosify_0.7.5_windows_amd64\\ddosifyLogFile.txt";
         System.out.println("1");
         String EmailLog_dosifyLogFile = "C:\\Simply\\QA_Automation\\ddosify_0.7.5_windows_amd64\\LogFile\\EmailLog_dosifyLogFile.txt";
