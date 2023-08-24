@@ -20,7 +20,7 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
-
+import  java.time.format.*;
 
 public class EmailHandling extends Constant {
 
@@ -33,6 +33,9 @@ public class EmailHandling extends Constant {
 
     public static void sendEnmail(String ddosifyJenkinsRunLogLocation , String Subject) {
 
+
+        DateTimeFormatter CUSTOM_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        
         // Create object of Property file
         Properties props = new Properties();
 
@@ -79,7 +82,7 @@ public class EmailHandling extends Constant {
             //message2.setRecipients(Message.RecipientType.TO,InternetAddress.parse("rnd@simplyclub.co.il"));
 
             // Add the subject link
-            message.setSubject(Subject+java.time.LocalDateTime.now());
+            message.setSubject(Subject+java.time.LocalDateTime.now().format(CUSTOM_FORMATTER));
             //message2.setSubject("Run log_"+ java.time.LocalDateTime.now());
 
             // Create object to add multimedia type content
