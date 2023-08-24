@@ -82,7 +82,7 @@ public class EmailHandling extends Constant {
             //message2.setRecipients(Message.RecipientType.TO,InternetAddress.parse("rnd@simplyclub.co.il"));
 
             // Add the subject link
-            message.setSubject(Subject+java.time.LocalDateTime.now().format(CUSTOM_FORMATTER));
+            message.setSubject(Subject+ " " + java.time.LocalDateTime.now().format(CUSTOM_FORMATTER));
             //message2.setSubject("Run log_"+ java.time.LocalDateTime.now());
 
             // Create object to add multimedia type content
